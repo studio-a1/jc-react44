@@ -1,0 +1,12 @@
+.cadastro1-container {
+    max-width: 600px;
+    margin: 50 auto;
+    padding: 40px;
+    background-color: #78b5e7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cadastro1-form {
+    display: flex
+  }
