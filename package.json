@@ -3,10 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "homepage": ".",
-  "proxy": "http://localhost:3000",
   "proxy": "http://localhost:3001",
-  "dependencies":
-   {
+  "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -14,9 +12,11 @@
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
-    
   },
+"homepage": "https://https://orionjc.github.io/jc-react44/",
   "scripts": {
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,6 +40,8 @@
       "last 1 safari version",
       "last 1 edge version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
-  
 }
