@@ -1,11 +1,30 @@
-.cadastro1-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* App.css */
+
+body {
+  margin: 10;
+  padding: 50;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-.cadastro1-form {
-  display: flex
+h1 {
+  color: #4CAF50;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4c45a0;
+}
+
+/* Outros estilos globais que deseja aplicar */
