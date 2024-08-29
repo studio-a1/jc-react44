@@ -125,8 +125,9 @@ function Cadastro1() {
 
   return (
     <div className="cadastro1">
+      
       <p>Carro</p>
-      <label htmlFor="tanque">Tanque (litros):</label>
+      <label htmlFor="tanque">Tanquecheio(litros):</label>
       <input
         type="text"
         name="tanque"
@@ -134,7 +135,7 @@ function Cadastro1() {
         onChange={handleTanqueChange}
       />
 
-      <label htmlFor="consumo">Consumo (km/l):</label>
+<label htmlFor="consumo">Consumo (km/l):</label>
       <input
         type="text"
         name="consumo"
@@ -142,8 +143,7 @@ function Cadastro1() {
         onChange={handleConsumoChange}
       />
 
-      <p>
-        Autonomia:{' '}
+      <p>        Autonomia:{' '}
         <span style={{ fontStyle: autonomia === '' ? 'italic' : 'normal', fontWeight: autonomia !== '' ? 'bold' : 'normal' }}>
           {autonomia !== '' ? `${autonomia} km` : '---'}
         </span>
@@ -157,7 +157,7 @@ function Cadastro1() {
         onChange={handleTrajetoriaChange}
       />
 
-      <label htmlFor="precoCombustivel">Combustível (R$ por litro):</label>
+      <label htmlFor="precoCombustivel">Comb(R$ por litro):</label>
       <input
         type="text"
         name="precoCombustivel"

@@ -1,8 +1,13 @@
 /* Cadastro1.css */
 
+body {
+	font-family: "Poppins", sans-serif;
+	max-width: auto;
+	margin: auto;
+}
 .cadastro1-container {
-  max-width: 600px;
-  margin: 50 auto;
+  max-width: 300px;
+  margin: 50;
   padding: 20px;
   background-color: #b28484;
   border-radius: 8px;
@@ -15,24 +20,25 @@
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 label {
+  font-size: 25px;
   font-weight: bold;
-  margin-bottom: 5px;
-  display: block;
+  margin-bottom: 0px;
+  display: display-box;
 }
 
 input, select {
-  width: 100%;
+  width: 60%;
   padding: 10px;
-  margin-top: 5px;
-  border-radius: 5px;
-  border: 1px solid #ac1616;
+  margin-top: 5%;
+  border-radius: 15px;
+  border: 3px solid #ac1616;
 }
 
 .button-group {
-  display: flex;
+  display: flexbox;
   justify-content: center;
 }

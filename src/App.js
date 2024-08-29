@@ -94,11 +94,12 @@ function Cadastro1() {
     }
   };
 
-  const handleTransportarAutonomia = () => {
+  /*const handleTransportarAutonomia = () => {
     if (autonomia !== '') {
       setTrajetoria(autonomia);
     }
   };
+  <button onClick={handleTransportarAutonomia}>Aut | Trip=Kms</button>*/
 
   const handleZerar = () => {
     setTanque('');
@@ -126,7 +127,8 @@ function Cadastro1() {
 
   return (
     <div className="cadastro1">
-      <p>Carro</p>
+      <p>Calcule gasto básico para dirigir/Uber, 99  etc..</p>
+<p>Insira os Dados</p>
       <label htmlFor="tanque">Tanque (litros):</label>
       <input
         type="text"
@@ -150,7 +152,7 @@ function Cadastro1() {
         </span>
       </p>
 
-      <label htmlFor="trajetoria">Trajetória:</label>
+      <label htmlFor="trajetoria">Percurso:</label>
       <input
         type="text"
         name="trajetoria"
@@ -158,7 +160,7 @@ function Cadastro1() {
         onChange={handleTrajetoriaChange}
       />
 
-      <label htmlFor="precoCombustivel">Combustível (R$ por litro):</label>
+      <label htmlFor="precoCombustivel">Combustível(litro):$</label>
       <input
         type="text"
         name="precoCombustivel"
@@ -167,17 +169,17 @@ function Cadastro1() {
       />
 
       <p>
-        Gasto R$:{' '}
+        Gastou:{' '}
         <span style={{ fontStyle: gasto === '' ? 'italic' : 'normal', fontWeight: gasto !== '' ? 'bold' : 'normal' }}>
           {gasto !== '' ? `R$${gasto}` : '---'}
         </span>
       </p>
 
-      <button onClick={handleTransportarAutonomia}>Aut | Trip=Kms</button>
-      <p><button onClick={handleZerar}>Zerar Tudo</button></p>
+      
+      
 
-      <div>
-        <label htmlFor="meta">Metas:</label>
+      <div><p>
+        <label htmlFor="meta"><h1>Metas:</h1></label></p>
         <select name="meta" value={meta} onChange={handleMetaChange}>
           <option value="">Selecione uma opção</option>
           <option value="150">150 Kms</option>
@@ -187,7 +189,7 @@ function Cadastro1() {
         </select>
         {meta === '' ? null : (
           <p>
-            Selecionada: {' '}
+            {' '}
             <span style={{ fontStyle: (meta === '' || (valorAluguel !== '' && tipoAluguel === 'Mensal')) ? 'italic' : 'normal', fontWeight: (meta !== '' && (valorAluguel === '' || tipoAluguel !== 'Mensal')) ? 'bold' : 'normal' }}>
               {meta !== '' ? `${meta} Kms` : '---'}
             </span>
@@ -197,16 +199,16 @@ function Cadastro1() {
 
       {meta === '' || isNaN(meta) ? null : (
         <p>
-          Meta / Comb R$:{' '}
+          Gastou:{' '}
           <span style={{ fontStyle: gasto2 === '' ? 'italic' : 'normal', fontWeight: gasto2 !== '' ? 'bold' : 'normal' }}>
             {gasto2 !== '' ? `R$${gasto2}` : '---'}
           </span>
         </p>
       )}
 
-      <div>
-        <p><h1> Gasto Fixo</h1></p>
-        <label htmlFor="tipoAluguel">Tipo de Aluguel:</label>
+      <div><br></br>
+        <p> Gasto Fixo</p>
+        <label htmlFor="tipoAluguel">Locação:</label>
         <select name="tipoAluguel" value={tipoAluguel} onChange={handleTipoAluguelChange}>
           <option value="">Selecione uma opção</option>
           <option value="Mensal">Mensal</option>
@@ -214,7 +216,7 @@ function Cadastro1() {
         </select>
         {tipoAluguel === 'Mensal' && (
           <div>
-            <label htmlFor="valorAluguel">Valor do Aluguel Mensal:</label>
+            <label htmlFor="valorAluguel">$ Mensal:</label>
             <input
               type="text"
               name="valorAluguel"
@@ -225,7 +227,7 @@ function Cadastro1() {
         )}
         {tipoAluguel === 'Semanal' && (
           <div>
-            <label htmlFor="valorAluguel">Valor do Aluguel Semanal:</label>
+            <label htmlFor="valorAluguel">$ Semanal:</label>
             <input
               type="text"
               name="valorAluguel"
@@ -236,23 +238,25 @@ function Cadastro1() {
         )}
         {aluguel !== '' && (
           <p>
-            Diário Aluguel R$:{' '}
+            Aluguel por dia:{' '}
             <span style={{ fontStyle: aluguel === '' ? 'italic' : 'normal', fontWeight: aluguel !== '' ? 'bold' : 'normal' }}>
               {aluguel !== '' ? `R$${aluguel}` : '---'}
             </span>
           </p>
         )}
-        <p><h1>Gasto Diário {aluguel !== '' ? `R$${aluguel}` : '---'} </h1></p>
+        
       </div>
 
       {gasto2 !== '' && aluguel !== '' && (
         <p>
-          Total Comb / Aluguel R$:{' '}
+         Comb+Aluguel TOTAL:{' '}
           <span style={{ fontStyle: totalCombAluguel === '' ? 'italic' : 'normal', fontWeight: totalCombAluguel !== '' ? 'bold' : 'normal' }}>
             {totalCombAluguel !== '' ? `R$${totalCombAluguel}` : '---'}
           </span>
         </p>
       )}
+      
+      <p><button onClick={handleZerar}>Zerar Tudo</button></p>
     </div>
   );
 }

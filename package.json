@@ -2,7 +2,7 @@
   "name": "jc-react44",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://https://orionjc.github.io/jc-react44/",
+  "homepage": "http://localhost:3000",
   "proxy": "http://localhost:3000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

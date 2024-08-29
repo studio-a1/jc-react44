@@ -1,31 +1,35 @@
 /* App.css */
 
 body {
-  margin: 10;
-  padding: 50;
+  font-size: 60px;
+  color: #111010;
+  margin: 460px;
+  padding: 0px;
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  background-image: url(./images/car.jpg);
-  color: #333;
+  background-image: url(/src/images/car.jpg);
+  background-size: 1680px 800px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+ 
 }
 
 h1 {
-  color: #4CAF50;
-  text-align: center;
+  color: #0f0f0f;
+  text-align: left;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 15px 100px;
   margin: 10px 5px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  background-color: #ce4b51;
+  color: rgb(231, 229, 229);
+  border:5px;
+  border-radius:20px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #4c45a0;
+  background-color: #f9678c;
 }
 
 /* Outros estilos globais que deseja aplicar */
