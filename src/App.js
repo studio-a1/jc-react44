@@ -127,7 +127,9 @@ function Cadastro1() {
 
   return (
     <div className="cadastro1">
-      <p>Calcule gasto básico para dirigir/Uber, 99  etc..</p>
+      <p>Calcule gasto básico para dirigir/Uber, 99  etc..</p><li></li>
+      
+      
 <p>Insira os Dados</p>
       <label htmlFor="tanque">Tanque (litros):</label>
       <input
@@ -135,7 +137,7 @@ function Cadastro1() {
         name="tanque"
         value={tanque}
         onChange={handleTanqueChange}
-      />
+      /><li>
 
       <label htmlFor="consumo">Consumo (km/l):</label>
       <input
@@ -143,7 +145,7 @@ function Cadastro1() {
         name="consumo"
         value={consumo}
         onChange={handleConsumoChange}
-      />
+      /></li>
 
       <p>
         Autonomia:{' '}
@@ -198,15 +200,15 @@ function Cadastro1() {
       </div>
 
       {meta === '' || isNaN(meta) ? null : (
-        <p>
+        <div><p>
           Gastou:{' '}
           <span style={{ fontStyle: gasto2 === '' ? 'italic' : 'normal', fontWeight: gasto2 !== '' ? 'bold' : 'normal' }}>
             {gasto2 !== '' ? `R$${gasto2}` : '---'}
           </span>
-        </p>
+        </p></div>
       )}
 
-      <div><br></br>
+      <div>
         <p> Gasto Fixo</p>
         <label htmlFor="tipoAluguel">Locação:</label>
         <select name="tipoAluguel" value={tipoAluguel} onChange={handleTipoAluguelChange}>

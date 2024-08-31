@@ -135,7 +135,7 @@ function Cadastro1() {
         onChange={handleTanqueChange}
       />
 
-<label htmlFor="consumo">Consumo (km/l):</label>
+<label htmlFor="consumo">Consumo1 (km/l):</label>
       <input
         type="text"
         name="consumo"
@@ -143,11 +143,11 @@ function Cadastro1() {
         onChange={handleConsumoChange}
       />
 
-      <p>        Autonomia:{' '}
+      <p>       Autonomia:{' '}
         <span style={{ fontStyle: autonomia === '' ? 'italic' : 'normal', fontWeight: autonomia !== '' ? 'bold' : 'normal' }}>
           {autonomia !== '' ? `${autonomia} km` : '---'}
         </span>
-      </p>
+        </p>
 
       <label htmlFor="trajetoria">Trajetória:</label>
       <input
@@ -204,7 +204,7 @@ function Cadastro1() {
       )}
 
       <div>
-        <p><h1> Gasto Fixo</h1></p>
+        <p> Gasto Fixo</p>
         <label htmlFor="tipoAluguel">Tipo de Aluguel:</label>
         <select name="tipoAluguel" value={tipoAluguel} onChange={handleTipoAluguelChange}>
           <option value="">Selecione uma opção</option>
