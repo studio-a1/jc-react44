@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/jc-react44/static/css/main.f4511f25.css",
+    "main.js": "/jc-react44/static/js/main.47acce04.js",
+    "static/js/453.10722015.chunk.js": "/jc-react44/static/js/453.10722015.chunk.js",
+    "static/media/car.jpg": "/jc-react44/static/media/car.21fa6a6867a88f59d7ed.jpg",
+    "index.html": "/jc-react44/index.html",
+    "main.f4511f25.css.map": "/jc-react44/static/css/main.f4511f25.css.map",
+    "main.47acce04.js.map": "/jc-react44/static/js/main.47acce04.js.map",
+    "453.10722015.chunk.js.map": "/jc-react44/static/js/453.10722015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4511f25.css",
+    "static/js/main.47acce04.js"
+  ]
+}
